@@ -7,6 +7,16 @@ description: Standardize how buttons are added and styled across HTML pages.
 
 Use this skill whenever the user asks to add, update, or restyle buttons in HTML pages.
 
+## Activation Triggers
+
+Use this skill by default when any task includes one or more of these conditions:
+
+1. Any edit to an HTML file that adds or modifies a `<button>` element.
+2. Any request that mentions button style, button variant, button class, CTA, or call-to-action.
+3. Any request to align button markup with project conventions.
+
+If a task updates HTML and touches a `<button>` element, do not proceed without applying this skill's rules.
+
 ## Core Rules
 
 1. Keep behavior unchanged unless the user explicitly asks for new behavior.
