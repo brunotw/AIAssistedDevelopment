@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="counter-card">
+      <h1>Counter</h1>
+      <p id="count" aria-live="polite">0</p>
+      <div class="counter-actions">
+        <button
+          id="decrement"
+          class="btn btn--secondary"
+          type="button"
+          aria-label="Decrease counter"
+          data-skill-button-standardizer="true"
+        >
+          Decrement
+        </button>
+        <button
+          id="increment"
+          class="btn btn--primary"
+          type="button"
+          aria-label="Increase counter"
+          data-skill-button-standardizer="true"
+        >
+          Increment
+        </button>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
