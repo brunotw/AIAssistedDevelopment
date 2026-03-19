@@ -1,9 +1,20 @@
-const countElement = document.getElementById("count");
-const incrementButton = document.getElementById("increment");
+// This JavaScript was last updated by the skill: Javascript Standardizer on 2026-03-19 21:50
+var App = App || {};
 
-let count = 0;
+App.initCounter = function initCounter() {
+  const countElement = document.getElementById("count");
+  const incrementButton = document.getElementById("increment");
 
-incrementButton.addEventListener("click", () => {
-  count += 1;
-  countElement.textContent = String(count);
-});
+  let count = 0;
+
+  function renderCount() {
+    countElement.textContent = String(count);
+  }
+
+  incrementButton.addEventListener("click", () => {
+    count += 1;
+    renderCount();
+  });
+};
+
+App.initCounter();
